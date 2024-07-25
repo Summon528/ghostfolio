@@ -773,7 +773,7 @@ export class PortfolioService {
             date,
             averagePrice: currentAveragePrice,
             marketPrice:
-              historicalDataArray.length > 0
+              historicalDataArray.length > 0 || currentAveragePrice == 0
                 ? marketPrice
                 : currentAveragePrice,
             quantity: currentQuantity
